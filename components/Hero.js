@@ -5,6 +5,7 @@ import Container from "./ui/Container";
 import Counter from "./ui/Counter";
 import HeroImage from "./HeroImage";
 import HeroImage2 from "./HeroImage2";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -35,12 +36,19 @@ const HeroSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                <Button className="hero" size="xl">
-                  Request a Demo
-                </Button>
-                <Button variant="heroOutline" size="xl">
-                  View Live Stores
-                </Button>
+                <Link
+                  href="https://locale-dashboard.vercel.app/dashboard"
+                  target="_blank"
+                >
+                  <Button className="hero" size="xl">
+                    Dashboard Demo
+                  </Button>
+                </Link>
+                <Link href={"#projects"}>
+                  <Button variant="heroOutline" size="xl">
+                    View Live Stores
+                  </Button>
+                </Link>
               </div>
 
               <div className="flex items-center gap-6 pt-4 mt-6">

@@ -1,13 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
-import { BarChart3, ShoppingCart, Package, Tag } from "lucide-react";
+import { BarChart3, ShoppingCart, Package, Tag, Mail } from "lucide-react";
 
 const features = [
   {
     icon: BarChart3,
     title: "Advanced Analytics",
     description:
-      "Real-time sales, revenue, and conversion tracking with beautiful visualizations and exportable reports.",
+      "Real-time sales, revenue, and order tracking with clear insights, all visualized in a modern dashboard.",
   },
   {
     icon: ShoppingCart,
@@ -27,11 +27,17 @@ const features = [
     description:
       "Create flexible discount rules, promo codes, and automated campaign scheduling to boost sales.",
   },
+  {
+    icon: Mail,
+    title: "Newsletter",
+    description:
+      "Collect and manage subscribed users, send campaigns, and grow your audience directly from your dashboard.",
+  },
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="relative py-32 section-gradient">
+    <section id="features" className="relative py-16 md:py-32 section-gradient">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,8 +53,7 @@ const Features = () => {
             Powerful <span className="gradient-text">Built-In Dashboard</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Everything you need to manage and grow your online store, all in one
-            beautiful interface.
+            Everything you need to manage and grow your online store.
           </p>
         </motion.div>
 

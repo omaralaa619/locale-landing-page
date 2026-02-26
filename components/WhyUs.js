@@ -35,7 +35,7 @@ const reasons = [
 
 const WhyUsSection = () => {
   return (
-    <section id="why-us" className="relative py-32 section-gradient">
+    <section id="why-us" className="relative py-16 md:py-32 section-gradient">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

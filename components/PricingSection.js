@@ -4,19 +4,21 @@ import Button from "./ui/Button";
 import { Check, ArrowRight } from "lucide-react";
 
 const features = [
+  "One-time payment, no subscriptions",
   "Custom-designed eCommerce website",
   "Built-in analytics dashboard",
   "Order & inventory management",
   "Discount & coupon system",
+  "Online payments via Paymob",
+  "Facebook Pixel integration",
   "Mobile-responsive design",
   "SEO optimized",
   "SSL & security included",
-  "1 year of free support",
 ];
 
 const PricingSection = () => {
   return (
-    <section id="pricing" className="relative py-32 section-gradient">
+    <section id="pricing" className="relative py-16  md:py-32 section-gradient">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -53,10 +55,10 @@ const PricingSection = () => {
             </p>
             <div className="flex flex-col items-center mb-2">
               <span className="text-lg text-muted-foreground line-through">
-                $3,999
+                £10,000
               </span>
               <span className="text-6xl font-bold gradient-text-bright">
-                $2,499
+                £8,000
               </span>
             </div>
             <p className="text-muted-foreground mb-8">
@@ -73,11 +75,6 @@ const PricingSection = () => {
                 </div>
               ))}
             </div>
-
-            <Button variant="hero" size="xl" className="w-full group">
-              Start Your Project
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
           </div>
         </motion.div>
       </div>

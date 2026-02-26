@@ -6,34 +6,22 @@ import Button from "./ui/Button";
 
 const stores = [
   {
-    name: "MOXIIER",
+    name: "NODIKA",
     description:
-      "Luxury fashion & accessories marketplace with curated designer collections.",
-    image: "/dashboard-mockup.png",
+      "What you wear is how you present yourself to the world, especially today, NODIKA Is your fashion.",
+    image: "/new.png",
   },
   {
-    name: "TechNova",
+    name: "Thawb",
     description:
-      "Premium electronics and gadgets store with immersive product experiences.",
-    image: "/dashboard-mockup.png",
-  },
-  {
-    name: "Organic Glow",
-    description:
-      "Artisanal skincare brand with subscription-based beauty routines.",
-    image: "/dashboard-mockup.png",
-  },
-  {
-    name: "DutraFlure",
-    description:
-      "Modern furniture and home decor with AR-powered room visualization.",
+      "Thawb is an Egyptian fashion brand offering premium quality, uniquely designed, affordable clothing.",
     image: "/dashboard-mockup.png",
   },
 ];
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative py-32">
+    <section id="projects" className="relative py-16 md:py-32">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,7 +59,7 @@ const Projects = () => {
                   className="w-full h-56 object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <div className="p-6 flex items-center justify-between">
+              <div className="p-6 flex flex-col gap-4  justify-between">
                 <div>
                   <h3 className="text-lg font-semibold mb-1 text-foreground">
                     {store.name}
@@ -80,11 +68,7 @@ const Projects = () => {
                     {store.description}
                   </p>
                 </div>
-                <Button
-                  variant="heroOutline"
-                  size="sm"
-                  className="shrink-0 ml-4"
-                >
+                <Button variant="heroOutline" size="sm" className=" ml-4">
                   <ExternalLink className="h-4 w-4" />
                   Visit
                 </Button>

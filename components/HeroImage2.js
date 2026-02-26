@@ -46,12 +46,12 @@ const HeroImage = () => {
           {/* Browser chrome */}
           <div className="flex items-center gap-2 px-4 py-3 bg-card/80 border-b border-glass-border">
             <div className="flex gap-1.5">
-              <span className="h-3 w-3 rounded-full bg-destructive/70" />
-              <span className="h-3 w-3 rounded-full bg-yellow-500/70" />
-              <span className="h-3 w-3 rounded-full bg-green-500/70" />
+              <span className="h-2 w-2 md:h-3 md:w-3 rounded-full bg-destructive/70" />
+              <span className="h-2 w-2 md:h-3 md:w-3 rounded-full bg-yellow-500/70" />
+              <span className="h-2 w-2 md:h-3 md:w-3 rounded-full bg-green-500/70" />
             </div>
             <div className="flex-1 mx-2">
-              <div className="bg-muted/60 rounded-md px-3 py-1 text-xs text-muted-foreground truncate max-w-xs mx-auto text-center">
+              <div className="bg-muted/60 rounded-md px-3 py-[3px] md:px-3 md:py-1 text-xs text-muted-foreground truncate max-w-xs mx-auto text-center">
                 admin.yourstore.com/dashboard
               </div>
             </div>

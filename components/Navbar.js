@@ -21,7 +21,7 @@ const Navbar = () => {
           <Logo />
           <div>
             <span className="text-foreground"></span>
-            <span className="gradient-text-bright">Local-E</span>
+            <span className="gradient-text-bright">LocalE</span>
           </div>
         </a>
 
