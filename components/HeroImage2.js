@@ -26,7 +26,7 @@ const HeroImage = () => {
   }, [isInView, controls]);
 
   return (
-    <div ref={ref} className="scale-125">
+    <div ref={ref}>
       <motion.div
         initial={{
           rotateX: 30,
