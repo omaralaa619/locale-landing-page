@@ -8,7 +8,7 @@ import HeroImage2 from "./HeroImage2";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
+    <section className="relative min-h-screen flex items-center overflow-hidden py-16 ">
       {/* Background glow */}
       {/* <div className="pointer-events-none absolute inset-0 particle-bg" /> */}
       <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[600px] rounded-full bg-glow-purple/20 blur-[120px] animate-glow-pulse" />

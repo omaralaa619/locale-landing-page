@@ -58,7 +58,7 @@ const HeroImage = () => {
           </div>
 
           <img
-            src="/dd2.png"
+            src="/LS.png"
             alt="eCommerce admin dashboard"
             className="w-full block"
           />
