@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { BarChart3, ShoppingCart, Package, Tag, Mail } from "lucide-react";
+import Container from "./ui/Container";
 
 const features = [
   {
@@ -38,7 +39,7 @@ const features = [
 const Features = () => {
   return (
     <section id="features" className="relative py-16 md:py-32 section-gradient">
-      <div className="container mx-auto">
+      <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -79,7 +80,7 @@ const Features = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

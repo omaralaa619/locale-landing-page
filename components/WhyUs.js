@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { DollarSign, Code2, TrendingUp, Zap, Shield } from "lucide-react";
+import Container from "./ui/Container";
 
 const reasons = [
   {
@@ -36,7 +37,7 @@ const reasons = [
 const WhyUsSection = () => {
   return (
     <section id="why-us" className="relative py-16 md:py-32 section-gradient">
-      <div className="container mx-auto px-6">
+      <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +56,7 @@ const WhyUsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6  ">
           {reasons.map((reason, i) => (
             <motion.div
               key={reason.title}
@@ -79,7 +80,7 @@ const WhyUsSection = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

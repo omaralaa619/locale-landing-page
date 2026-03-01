@@ -4,10 +4,8 @@ const Footer = () => {
       <div className="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-sm text-muted-foreground">
           © 2026{" "}
-          <span className="gradient-text-bright font-semibold">
-            NovaCommerce
-          </span>
-          . All rights reserved.
+          <span className="gradient-text-bright font-semibold">LocalE</span>.
+          All rights reserved.
         </div>
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
           <a href="#" className="hover:text-foreground transition-colors">
